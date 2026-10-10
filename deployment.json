@@ -1,0 +1,17 @@
+{
+  "network": "studionet",
+  "chain_id": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "address": "0x4a38a7183bCFB23843362DC02FE69c26Cb4C91af",
+  "explorer": "https://explorer-studio.genlayer.com/address/0x4a38a7183bCFB23843362DC02FE69c26Cb4C91af",
+  "deployment_transaction": "0x8ca9060914595466f2ff83945d5ea0cd4222b6fa3202e90b4ced52dd776ad102",
+  "deployer": "0x8d256bbf31531d8e4D12C380bC1d321Ee4c1CC21",
+  "source_path": "contracts/scopelock.py",
+  "source_sha256": "bfefeb19be3cfcde0ac928d5309a2f56765876470281b8725a0542068644d5e3",
+  "deployed_source_sha256": "bfefeb19be3cfcde0ac928d5309a2f56765876470281b8725a0542068644d5e3",
+  "byte_for_byte_match": true,
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "deployment_status": "FINALIZED",
+  "deployment_execution": "SUCCESS",
+  "verified_at": "2026-10-10T15:45:04.444Z"
+}

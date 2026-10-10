@@ -1,0 +1,131 @@
+[
+  {
+    "label": "deploy",
+    "hash": "0x8ca9060914595466f2ff83945d5ea0cd4222b6fa3202e90b4ced52dd776ad102",
+    "status": "FINALIZED",
+    "result": "MAJORITY_AGREE",
+    "execution": "SUCCESS",
+    "leader_result": {
+      "status": "return",
+      "payload": {
+        "readable": "null"
+      }
+    },
+    "eq_outputs": {},
+    "votes": [
+      "AGREE",
+      "AGREE",
+      "IDLE",
+      "AGREE",
+      "IDLE"
+    ],
+    "rounds": "1",
+    "created_at": "2026-10-10T15:38:15.093376+00:00"
+  },
+  {
+    "label": "create bounded grant",
+    "hash": "0x47352a1a2da0a8e4c615b3be00f8fe69aed5f20c7e87188be520169f5d516e50",
+    "status": "FINALIZED",
+    "result": "MAJORITY_AGREE",
+    "execution": "SUCCESS",
+    "leader_result": {
+      "status": "return",
+      "payload": {
+        "readable": "1"
+      }
+    },
+    "eq_outputs": {},
+    "votes": [
+      "IDLE",
+      "AGREE",
+      "IDLE",
+      "AGREE",
+      "AGREE"
+    ],
+    "rounds": "1",
+    "created_at": "2026-10-10T15:45:06.263616+00:00"
+  },
+  {
+    "label": "positive semantic permit",
+    "hash": "0x3c40dc0aff7dcfa20334795c1eda221ebe9e814cd1f900db93276ceb19efa2c0",
+    "status": "FINALIZED",
+    "result": "MAJORITY_AGREE",
+    "execution": "SUCCESS",
+    "leader_result": {
+      "status": "return",
+      "payload": {
+        "readable": "1"
+      }
+    },
+    "eq_outputs": {
+      "0": {
+        "status": "return",
+        "payload": {
+          "readable": "[{\"confidence\":\"high\"\"decision\":\"ALLOW\"\"id\":0},{\"confidence\":\"high\"\"decision\":\"ALLOW\"\"id\":1},]"
+        }
+      }
+    },
+    "votes": [
+      "AGREE",
+      "IDLE",
+      "AGREE",
+      "AGREE",
+      "IDLE"
+    ],
+    "rounds": "1",
+    "created_at": "2026-10-10T15:45:47.761241+00:00"
+  },
+  {
+    "label": "consume exact authorized body",
+    "hash": "0xc6f9d2cb9565a4ffe7c214dade132bd5d1384e4d4d9487e2992c44ea89252e20",
+    "status": "FINALIZED",
+    "result": "MAJORITY_AGREE",
+    "execution": "SUCCESS",
+    "leader_result": {
+      "status": "return",
+      "payload": {
+        "readable": "{\"digest\":\"7440ccaf7610e30c78d6ca2f026200642341730d69534ef21c468a8752a7860b\"\"operation\":{\"action\":\"publish\"\"body\":\"Join our free educational workshop about Python programming on Saturday. Everyone is welcome.\"\"resource\":\"community/announcements\"}\"units\":1}"
+      }
+    },
+    "eq_outputs": {},
+    "votes": [
+      "AGREE",
+      "AGREE",
+      "IDLE",
+      "IDLE",
+      "AGREE"
+    ],
+    "rounds": "1",
+    "created_at": "2026-10-10T15:46:30.290424+00:00"
+  },
+  {
+    "label": "negative solicitation rejection",
+    "hash": "0xe8fa528728ee900a0f3bef8c19371a4fc4280637c683c13f6e25f161da6d6196",
+    "status": "FINALIZED",
+    "result": "MAJORITY_AGREE",
+    "execution": "SUCCESS",
+    "leader_result": {
+      "status": "return",
+      "payload": {
+        "readable": "2"
+      }
+    },
+    "eq_outputs": {
+      "0": {
+        "status": "return",
+        "payload": {
+          "readable": "[{\"confidence\":\"high\"\"decision\":\"ALLOW\"\"id\":0},{\"confidence\":\"high\"\"decision\":\"DENY\"\"id\":1},]"
+        }
+      }
+    },
+    "votes": [
+      "AGREE",
+      "IDLE",
+      "AGREE",
+      "IDLE",
+      "AGREE"
+    ],
+    "rounds": "1",
+    "created_at": "2026-10-10T15:47:09.306007+00:00"
+  }
+]

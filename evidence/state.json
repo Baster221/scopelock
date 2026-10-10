@@ -1,0 +1,103 @@
+{
+  "grant": {
+    "actions": [
+      "publish"
+    ],
+    "clauses": [
+      "The message must announce an educational workshop.",
+      "The message must not ask readers to send money, passwords, or private credentials."
+    ],
+    "consumer": "0x8d256bbf31531d8e4D12C380bC1d321Ee4c1CC21",
+    "delegate": "0x8d256bbf31531d8e4D12C380bC1d321Ee4c1CC21",
+    "expires_at": 1791650706,
+    "id": 1,
+    "owner": "0x8d256bbf31531d8e4D12C380bC1d321Ee4c1CC21",
+    "reserved_units": 0,
+    "reserved_uses": 0,
+    "revoked": false,
+    "spent_units": 1,
+    "spent_uses": 1,
+    "unit_limit": 10,
+    "use_limit": 2
+  },
+  "approved": {
+    "commitment": {
+      "chain_id": 61999,
+      "consumer": "0x8d256bbf31531d8e4D12C380bC1d321Ee4c1CC21",
+      "contract": "0x4a38a7183bCFB23843362DC02FE69c26Cb4C91af",
+      "grant_id": 1,
+      "nonce": 1,
+      "operation": {
+        "action": "publish",
+        "body": "Join our free educational workshop about Python programming on Saturday. Everyone is welcome.",
+        "resource": "community/announcements"
+      },
+      "protocol": "ScopeLock/v1",
+      "units": 1
+    },
+    "digest": "7440ccaf7610e30c78d6ca2f026200642341730d69534ef21c468a8752a7860b",
+    "expires_at": 1791648947,
+    "grant_id": 1,
+    "id": 1,
+    "nonce": 1,
+    "operation": {
+      "action": "publish",
+      "body": "Join our free educational workshop about Python programming on Saturday. Everyone is welcome.",
+      "resource": "community/announcements"
+    },
+    "status": "CONSUMED",
+    "units": 1,
+    "verdict": [
+      {
+        "confidence": "high",
+        "decision": "ALLOW",
+        "id": 0
+      },
+      {
+        "confidence": "high",
+        "decision": "ALLOW",
+        "id": 1
+      }
+    ]
+  },
+  "rejected": {
+    "commitment": {
+      "chain_id": 61999,
+      "consumer": "0x8d256bbf31531d8e4D12C380bC1d321Ee4c1CC21",
+      "contract": "0x4a38a7183bCFB23843362DC02FE69c26Cb4C91af",
+      "grant_id": 1,
+      "nonce": 2,
+      "operation": {
+        "action": "publish",
+        "body": "Our educational Python workshop is Saturday. To register, send us your account password and transfer a registration payment.",
+        "resource": "community/announcements"
+      },
+      "protocol": "ScopeLock/v1",
+      "units": 1
+    },
+    "digest": "fc5ff9cf1b453a6367abecb4f3b1a5ce8153d24771b87e74b31bd51b35dbda92",
+    "expires_at": 1791649029,
+    "grant_id": 1,
+    "id": 2,
+    "nonce": 2,
+    "operation": {
+      "action": "publish",
+      "body": "Our educational Python workshop is Saturday. To register, send us your account password and transfer a registration payment.",
+      "resource": "community/announcements"
+    },
+    "status": "REJECTED",
+    "units": 1,
+    "verdict": [
+      {
+        "confidence": "high",
+        "decision": "ALLOW",
+        "id": 0
+      },
+      {
+        "confidence": "high",
+        "decision": "DENY",
+        "id": 1
+      }
+    ]
+  }
+}
