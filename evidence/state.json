@@ -99,5 +99,60 @@
         "id": 1
       }
     ]
+  },
+  "external_fact_rejection": {
+    "commitment": {
+      "chain_id": 61999,
+      "consumer": "0x8d256bbf31531d8e4D12C380bC1d321Ee4c1CC21",
+      "contract": "0x4a38a7183bCFB23843362DC02FE69c26Cb4C91af",
+      "grant_id": 2,
+      "nonce": 1,
+      "operation": {
+        "action": "publish",
+        "body": "I am a professionally certified instructor. Join my educational Python workshop on Saturday.",
+        "resource": "community/announcements"
+      },
+      "protocol": "ScopeLock/v1",
+      "units": 1
+    },
+    "digest": "88c4ffda01c24ace09dc2a37998921dc1741f50bdfc105a07a90ee66e03d35c5",
+    "expires_at": 1791649440,
+    "grant_id": 2,
+    "id": 3,
+    "nonce": 1,
+    "operation": {
+      "action": "publish",
+      "body": "I am a professionally certified instructor. Join my educational Python workshop on Saturday.",
+      "resource": "community/announcements"
+    },
+    "status": "REJECTED",
+    "units": 1,
+    "verdict": [
+      {
+        "confidence": "low",
+        "decision": "UNKNOWN",
+        "id": 0
+      }
+    ]
+  },
+  "external_fact_grant": {
+    "actions": [
+      "publish"
+    ],
+    "clauses": [
+      "The publisher must have an independently verified professional teaching certification."
+    ],
+    "consumer": "0x8d256bbf31531d8e4D12C380bC1d321Ee4c1CC21",
+    "delegate": "0x8d256bbf31531d8e4D12C380bC1d321Ee4c1CC21",
+    "expires_at": 1791651199,
+    "id": 2,
+    "owner": "0x8d256bbf31531d8e4D12C380bC1d321Ee4c1CC21",
+    "reserved_units": 0,
+    "reserved_uses": 0,
+    "revoked": false,
+    "spent_units": 0,
+    "spent_uses": 0,
+    "unit_limit": 10,
+    "use_limit": 2
   }
 }

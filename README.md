@@ -79,6 +79,8 @@ The suite explicitly runs captured validator functions with independent mocked r
 
 For real network evidence and execution receipts, see [LIVE_VALIDATION.md](docs/LIVE_VALIDATION.md). Local mocks establish code behavior, not real-model accuracy. Both are reported separately.
 
+`npm ci --ignore-scripts && npm run verify` performs read-only network verification. To reproduce the positive/negative flow with three distinct principals on a **fresh** gasless deployment, run `npm run smoke` explicitly. This opt-in script sends transactions, can take several minutes, and uses demonstration keys in memory only. It does not modify the supplied deployment. The [ABI](abi.json) and [reviewer guide](docs/REVIEWER_GUIDE.md) provide a quick entry point.
+
 ## Reuse responsibly
 
 A publishing adapter, constrained agent tool, or document workflow can use ScopeLock as its authorization ledger. The adapter must execute the **returned canonical fields**, enforce the mapping between `units` and the real operation's cost, and verify a finalized successful consume transaction before irreversible work. The contract transfers no tokens and makes no claim of atomicity with external systems. Public on-chain input and state are not confidential.

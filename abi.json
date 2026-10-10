@@ -1,0 +1,140 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "consume": {
+      "params": [
+        [
+          "permit_id",
+          "int"
+        ],
+        [
+          "operation_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "dict",
+      "payable": false
+    },
+    "create_grant": {
+      "params": [
+        [
+          "delegate",
+          "address"
+        ],
+        [
+          "consumer",
+          "address"
+        ],
+        [
+          "clauses_json",
+          "string"
+        ],
+        [
+          "actions_json",
+          "string"
+        ],
+        [
+          "unit_limit",
+          "int"
+        ],
+        [
+          "use_limit",
+          "int"
+        ],
+        [
+          "duration_seconds",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "int",
+      "payable": false
+    },
+    "get_grant": {
+      "params": [
+        [
+          "grant_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "get_permit": {
+      "params": [
+        [
+          "permit_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "release": {
+      "params": [
+        [
+          "permit_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "request_permit": {
+      "params": [
+        [
+          "grant_id",
+          "int"
+        ],
+        [
+          "nonce",
+          "int"
+        ],
+        [
+          "operation_json",
+          "string"
+        ],
+        [
+          "units",
+          "int"
+        ],
+        [
+          "duration_seconds",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "int",
+      "payable": false
+    },
+    "revoke": {
+      "params": [
+        [
+          "grant_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "version": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    }
+  }
+}

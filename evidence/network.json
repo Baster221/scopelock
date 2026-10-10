@@ -127,5 +127,54 @@
     ],
     "rounds": "1",
     "created_at": "2026-10-10T15:47:09.306007+00:00"
+  },
+  {
+    "label": "grant requiring unavailable external certification",
+    "hash": "0xdd35683e8c128e556908b0355a97b58c84c7a0acb94f9fabfd90e998b76de0eb",
+    "status": "FINALIZED",
+    "result": "MAJORITY_AGREE",
+    "execution": "SUCCESS",
+    "leader_result": {
+      "status": "return",
+      "payload": {
+        "readable": "2"
+      }
+    },
+    "eq_outputs": {},
+    "votes": [
+      "IDLE",
+      "IDLE",
+      "AGREE",
+      "AGREE",
+      "AGREE"
+    ]
+  },
+  {
+    "label": "self-asserted certification cannot grant permission",
+    "hash": "0xb062955645133e028060356161e261bd90abcab03161afdb878a5ecdedcede0c",
+    "status": "FINALIZED",
+    "result": "MAJORITY_AGREE",
+    "execution": "SUCCESS",
+    "leader_result": {
+      "status": "return",
+      "payload": {
+        "readable": "3"
+      }
+    },
+    "eq_outputs": {
+      "0": {
+        "status": "return",
+        "payload": {
+          "readable": "[{\"confidence\":\"low\"\"decision\":\"UNKNOWN\"\"id\":0},]"
+        }
+      }
+    },
+    "votes": [
+      "IDLE",
+      "AGREE",
+      "AGREE",
+      "IDLE",
+      "AGREE"
+    ]
   }
 ]

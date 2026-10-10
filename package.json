@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "scripts": {"verify": "node scripts/verify_deployment.mjs"},
+  "scripts": {"verify": "node scripts/verify_deployment.mjs", "smoke": "node scripts/studio_smoke.mjs"},
   "dependencies": {"genlayer-js": "1.1.8"}
 }

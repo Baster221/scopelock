@@ -22,7 +22,7 @@ Authority, reservations, nonces, revocation, expiration and consumption are dete
 
 - One readable, independently deployable source file with a pinned GenVM runner.
 - 23 passing direct tests, including explicit execution of captured validators with conflicting outputs.
-- Real StudioNet positive authorization, exact consumption and negative credential/payment solicitation rejection, with finalized successful execution receipts in `evidence/network.json` and resulting state in `evidence/state.json`.
+- Real StudioNet positive authorization, exact consumption, credential/payment solicitation rejection and UNKNOWN/low rejection of self-asserted certification, with finalized successful execution receipts in `evidence/network.json` and resulting state in `evidence/state.json`.
 - `deployment.json` records matching local/deployed source hashes. `npm run verify` re-fetches source and receipts without a wallet.
 - Consensus specification, threat model, adapter protocol, MIT license, locked verification dependencies and GitHub CI.
 
