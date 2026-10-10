@@ -4,7 +4,7 @@
 
 An agent may be allowed to publish workshop announcements, but not to ask for passwords, solicit payments, or spend unlimited posting credits. A broad API key does not encode that distinction. ScopeLock makes the smallest useful authorization decision on GenLayer, then binds it to a delegate, a consuming adapter, an exact operation, a nonce, an expiry, and two finite quotas.
 
-This repository contains one standalone Intelligent Contract. There is no frontend or off-chain decision service. See [the source](contracts/scopelock.py), [consensus specification](docs/CONSENSUS.md), [security and integration boundary](docs/SECURITY.md), and [submission text](SUBMISSION.md). Live deployment evidence is in [deployment.json](deployment.json).
+This repository contains one standalone Intelligent Contract. There is no frontend or off-chain decision service. See [the source](contracts/scopelock.py), [consensus specification](docs/CONSENSUS.md), and [security and integration boundary](docs/SECURITY.md). Live deployment evidence is in [deployment.json](deployment.json).
 
 ## Example
 
